@@ -1,0 +1,16 @@
+ame: Ci
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: docker-practice/actions-setup-docker@master
+      - name: testtt
+        run: |
+          docker-compose up -d
