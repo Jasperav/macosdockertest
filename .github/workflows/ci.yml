@@ -14,3 +14,4 @@ jobs:
       - name: testtt
         run: |
           docker-compose up -d
+          echo 1
